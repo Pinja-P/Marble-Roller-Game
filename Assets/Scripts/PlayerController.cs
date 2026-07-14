@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
 
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -53,7 +54,6 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
-
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
@@ -86,6 +86,5 @@ public class PlayerController : MonoBehaviour
             winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose!";
         }
     }
-
 
 }
