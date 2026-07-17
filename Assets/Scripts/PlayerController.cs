@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
         movementX = movementVector.x;
         movementY = movementVector.y;
 
+        Audio.Instance.PlaySFX("Ball Roll");
+
     }
 
 

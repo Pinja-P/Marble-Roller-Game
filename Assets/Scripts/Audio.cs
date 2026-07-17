@@ -56,5 +56,17 @@ public class Audio : MonoBehaviour
             sfxSource.PlayOneShot(s.clip);
         }
     }
- 
+
+    //Button to toggle music off
+    public void ToggleMusic()
+    {
+        musicSource.mute = !musicSource.mute;
+    }
+
+    // Button to toggle sounds off
+    public void ToggleSFX()
+    {
+        sfxSource.mute = !sfxSource.mute;
+    }
+
 }
